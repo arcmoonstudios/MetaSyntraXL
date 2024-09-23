@@ -1,0 +1,24 @@
+[model]
+vocab_size = 10000
+embed_dim = 512
+num_heads = 8
+hidden_dim = 2048
+num_layers = 6
+max_len = 512
+
+[optimizer]
+learning_rate = 0.001
+cache_capacity = 1000
+num_models = 5
+input_size = 512
+output_size = 10
+
+[logging]
+level = "info"
+
+[elasticsearch]
+url = "http://elasticsearch:9200"
+index = "documents"
+
+[prometheus]
+port = 9090

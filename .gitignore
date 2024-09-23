@@ -1,0 +1,55 @@
+# Ignore target directory (contains build artifacts)
+target/
+
+# Ignore Cargo.lock if this is a library crate
+Cargo.lock
+
+# Ignore the node_modules/ directory if using Node.js (optional)
+node_modules/
+
+# Ignore configuration files created by editors/IDEs
+*.rs.bk
+.idea/
+.vscode/
+*.swp
+*~
+*.bak
+*.tmp
+
+# Ignore log files and backups
+*.log
+*.bak
+*.tmp
+
+# Ignore Docker-related files (optional)
+docker-compose.override.yml
+docker-compose.local.yml
+.env
+.env.*
+
+# Ignore any compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore Prometheus configuration (optional)
+prometheus.yml
+
+# Ignore sensitive configuration files
+config/*.secret
+
+# Ignore other build-related files
+build/
+
+# Ignore any files related to test coverage or temporary files
+coverage/
+*.profdata
+*.profraw
+*.gcda
+*.gcno
+*.gcov
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db

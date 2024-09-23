@@ -1,0 +1,35 @@
+[package]
+name = "metasyntraxl"
+version = "0.1.0"
+edition = "2021"
+authors = ["Lord Xyn <LordXyn@proton.me>"]
+repository = "https://github.com/ArcMoonStudios/metasyntraxl"
+build = "build.rs"  # Added build script reference
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+tch = "0.10.3"
+serde = { version = "1.0.188", features = ["derive"] }
+serde_json = "1.0.105"
+rand = "0.8.5"
+anyhow = "1.0.75"
+thiserror = "1.0.46"
+log = "0.4.20"
+env_logger = "0.10.0"
+elasticsearch = { version = "8.15.0-alpha.1", features = ["native-tls"] }
+prometheus = "0.13.4"
+lazy_static = "1.4.0"
+config = "0.13.3"
+regex = "1.7.1"
+futures = "0.3"
+
+[dev-dependencies]
+tokio-test = "0.4"
+proptest = "1.0.0"
+pretty_assertions = "0.7.2"
+criterion = "0.4.0"
+flamegraph = "0.6.5"
+
+[build-dependencies]
+walkdir = "2.3.3"
+anyhow = "1.0.75"
